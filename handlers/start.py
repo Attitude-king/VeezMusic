@@ -81,7 +81,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔖 log Channel", url="https://t.me/pytgcalls_logs"
+                        "♂️ log Channel", url="https://t.me/pytgcalls_logs"
                     )
                 ],
             ]
@@ -101,9 +101,9 @@ async def start(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ PyTgGroup", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 PyTgChannel", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
