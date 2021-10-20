@@ -568,12 +568,12 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("•🖲️ Mᴇɴᴜ", callback_data="menu"),
                     InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• 𝐏𝐲𝐓𝐠𝐌𝐮𝐬𝐢𝐜[sᴜᴘᴘᴏʀᴛ]", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ],
             ]
@@ -617,12 +617,12 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("•🖲️ Mᴇɴᴜ", callback_data="menu"),
                     InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "• 𝐏𝐲𝐓𝐠𝐌𝐮𝐬𝐢𝐜[sᴜᴘᴘᴏʀᴛ]", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ],
             ]
@@ -711,12 +711,12 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
+                        InlineKeyboardButton("•🖲️ Mᴇɴᴜ", callback_data="menu"),
                         InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                            "• 𝐏𝐲𝐓𝐠𝐌𝐮𝐬𝐢𝐜[sᴜᴘᴘᴏʀᴛ]", url=f"https://t.me/{UPDATES_CHANNEL}"
                         )
                     ],
                 ]
@@ -869,7 +869,7 @@ async def lol_cb(b, cb):
         os.remove("final.png")
 
 
-@Client.on_message(command(["ytp", f"ytp@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["ytplay", f"ytplay@{BOT_USERNAME}"]) & other_filters)
 async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
