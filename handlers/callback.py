@@ -18,27 +18,27 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music on groups through the new Telegram's voice chats!**
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴏɴ ɢʀᴏᴜᴘs ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ɴᴇᴡ ᴛᴇʟᴇɢʀᴀᴍ's ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴘᴏᴡᴇʀ ʙʏ ᴘʏᴛɢᴄᴀʟʟs!!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **ɪ ᴀᴍ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴠᴇʀʏ ꜰᴀsᴛ ᴀɴᴅ sᴍᴏᴏᴛʜʟʏ.. >> ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ @Attitude_king_vj!**
 
-❔ **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+❔ **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » 😢 ʙᴀsɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ Add me to your Group 😁",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("😢 Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🤔 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("👩‍💻 Developer", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🔥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
@@ -46,7 +46,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
+                        " 🔖log channel", url="https://t.me/pytgcalls_logs"
                     )
                 ],
             ]
@@ -345,7 +345,7 @@ async def cblocal(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadven"))
 async def cbadven(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **here is the advanced commands**
+        f"""⚠️ **here is the advanced commands**
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -363,7 +363,7 @@ async def cbadven(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cblamp"))
 async def cblamp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **here is the admin commands**
+        f"""⚠️ **here is the admin commands**
 
 /player - show the music playing status
 /pause - pause the music streaming
