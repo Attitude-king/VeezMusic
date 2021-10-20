@@ -33,7 +33,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [InlineKeyboardButton("😢 Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("🤔 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("🤔 Commands", url=f"https://t.me/tgcalls_Music_update/10"),
                     InlineKeyboardButton("👩‍💻 Developer", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
@@ -66,8 +66,8 @@ async def cbhelp(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic"),
-                    InlineKeyboardButton("📕 Advanced Cmd", callback_data="cbadvanced"),
+                    InlineKeyboardButton("😢 basic Cmd", callback_data="cbbasic"),
+                    InlineKeyboardButton("👩‍💻 Advanced Cmd", callback_data="cbadvanced"),
                 ],
                 [
                     InlineKeyboardButton("📘 Admin Cmd", callback_data="cbadmin"),
@@ -88,7 +88,7 @@ async def cbbasic(_, query: CallbackQuery):
 🎧 [ GROUP VC CMD ]
 
 /play (song name) - play song from youtube
-/ytp (song name) - play song directly from youtube 
+/ytplay (song name) - play song directly from youtube 
 /stream (reply to audio) - play song using audio file
 /playlist - show the list song in queue
 /song (song name) - download song from youtube
@@ -188,7 +188,7 @@ async def cbowner(_, query: CallbackQuery):
 
 📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by {BOT_NAME} __""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbhelp")]]
         ),
@@ -277,14 +277,14 @@ async def cbhelps(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cblocal"),
-                    InlineKeyboardButton("📕 Advanced Cmd", callback_data="cbadven"),
+                    InlineKeyboardButton("😢 Basic Cmd", callback_data="cblocal"),
+                    InlineKeyboardButton("👩‍💻 Advanced Cmd", callback_data="cbadven"),
                 ],
                 [
-                    InlineKeyboardButton("📘 Admin Cmd", callback_data="cblamp"),
-                    InlineKeyboardButton("📗 Sudo Cmd", callback_data="cblab"),
+                    InlineKeyboardButton("🤫 Admin Cmd", callback_data="cblamp"),
+                    InlineKeyboardButton("⏱️ Sudo Cmd", callback_data="cblab"),
                 ],
-                [InlineKeyboardButton("📙 Owner Cmd", callback_data="cbmoon")],
+                [InlineKeyboardButton("✨ Owner Cmd", callback_data="cbmoon")],
                 [InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")],
             ]
         ),
@@ -311,12 +311,12 @@ async def cbguides(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cblocal"))
 async def cblocal(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **here is the basic commands**
+        f"""⚠️ **here is the basic commands**
 
 🎧 [ GROUP VC CMD ]
 
 /play (song name) - play song from youtube
-/ytp (song name) - play song directly from youtube 
+/ytplay (song name) - play song directly from youtube 
 /stream (reply to audio) - play song using audio file
 /playlist - show the list song in queue
 /song (song name) - download song from youtube
