@@ -311,9 +311,9 @@ async def m_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("• 𝐏𝐲𝐓𝐠/𝐌𝐮𝐬𝐢𝐜[Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "• 𝐏𝐲𝐓𝐠/𝐌𝐮𝐬𝐢𝐜[Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ],
             [InlineKeyboardButton("🔙 Go Back", callback_data="menu")],
@@ -651,7 +651,7 @@ async def play(_, message: Message):
             emojilist = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}...](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **Duration** - `{results[j]['duration']}`\n"
+                toxxt += f" ├ ⏱️ **Duration** - `{results[j]['duration']}`\n"
                 toxxt += f" └ ⚡ __Powered by {BOT_NAME}__\n\n"
                 j += 1
             keyboard = InlineKeyboardMarkup(
@@ -819,10 +819,10 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
+                InlineKeyboardButton("•✨ Mᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• 𝐏𝐲𝐓𝐠/𝐌𝐮𝐬𝐢𝐜[support]", url=f"https://t.me/{GROUP_SUPPORT}")],
         ]
     )
     await generate_cover(title, thumbnail, ctitle)
@@ -969,10 +969,10 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Mᴇɴᴜ", callback_data="menu"),
+                InlineKeyboardButton("•✨ Mᴇɴᴜ", callback_data="menu"),
                 InlineKeyboardButton("• Cʟᴏsᴇ", callback_data="cls"),
             ],
-            [InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")],
+            [InlineKeyboardButton("• 𝐏𝐲𝐓𝐠/𝐌𝐮𝐬𝐢𝐜[support]", url=f"https://t.me/{GROUP_SUPPORT}")],
         ]
     )
     message.from_user.first_name
