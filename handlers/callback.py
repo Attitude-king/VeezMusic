@@ -20,7 +20,7 @@ async def cbstart(_, query: CallbackQuery):
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
 💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴏɴ ɢʀᴏᴜᴘs ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ɴᴇᴡ ᴛᴇʟᴇɢʀᴀᴍ's ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴘᴏᴡᴇʀ ʙʏ ᴘʏᴛɢᴄᴀʟʟs!!**
 
-💡 **ɪ ᴀᴍ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴠᴇʀʏ ꜰᴀsᴛ ᴀɴᴅ sᴍᴏᴏᴛʜʟʏ.. >> ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ @Attitude_king_vj!**
+⚡ **ɪ ᴀᴍ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴠᴇʀʏ ꜰᴀsᴛ ᴀɴᴅ sᴍᴏᴏᴛʜʟʏ.. >> ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ @Attitude_king_vj!**
 
 ❔ **ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ » 😢 ʙᴀsɪᴄ ɢᴜɪᴅᴇ ʙᴜᴛᴛᴏɴ!!**""",
         reply_markup=InlineKeyboardMarkup(
@@ -203,7 +203,7 @@ async def cbguide(_, query: CallbackQuery):
 1.) **first, add me to your group.**
 2.) **then promote me as admin and give all permissions except anonymous admin.**
 3.) **add @{ASSISTANT_NAME} to your group or type /join to invite her.**
-4.) **turn on the voice chat first before start to play music.**
+4.) **turn on the voice chat first before start to play music enjoy! Any problem contact @Attitude_king_vj.**
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
